@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-03-18 15:37+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: learnpress-co-instructor.php:201
+msgid "All"
+msgstr ""
+
+#: learnpress-co-instructor.php:202
+msgid "Mine"
+msgstr ""
+
+#: learnpress-co-instructor.php:203
+msgid "Published"
+msgstr ""
+
+#: learnpress-co-instructor.php:204
+msgid "Private"
+msgstr ""
+
+#: learnpress-co-instructor.php:205
+msgid "Pending Review"
+msgstr ""
+
+#: learnpress-co-instructor.php:206
+msgid "Scheduled"
+msgstr ""
+
+#: learnpress-co-instructor.php:207
+msgid "Draft"
+msgstr ""
+
+#: learnpress-co-instructor.php:208
+msgid "Trash"
+msgstr ""
+
+#: learnpress-co-instructor.php:209
+msgid "Co-instructor"
+msgstr ""
+
+#: learnpress-co-instructor.php:350
+msgid "Co-Instructors"
+msgstr ""
+
+#: learnpress-co-instructor.php:352
+msgid "Colleagues'll work with you"
+msgstr ""
+
+#: learnpress-co-instructor.php:357
+msgid "Instructor username"
+msgstr ""

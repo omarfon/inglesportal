@@ -1,0 +1,54 @@
+<?php
+/**
+ * Section Layout
+ *
+ * @package Hair_Salon
+ */
+
+thim_customizer()->add_section(
+	array(
+		'id'       => 'content_layout',
+		'panel'    => 'general',
+		'title'    => esc_html__( 'Layouts', 'eduma' ),
+		'priority' => 20,
+	)
+);
+
+//---------------------------------------------Site-Content---------------------------------------------//
+
+// Select Theme Content Layout
+thim_customizer()->add_field(
+	array(
+		'id'       => 'thim_box_layout',
+		'type'     => 'radio-image',
+		'label'    => esc_html__( 'Site Layouts', 'eduma' ),
+		'tooltip'  => esc_html__( 'Allows you to choose a layout to display for all contents on your site.', 'eduma' ),
+		'section'  => 'content_layout',
+		'priority' => 10,
+		'default'  => 'wide',
+		'choices'  => array(
+			'wide'  => THIM_URI . 'images/layout/content-full.jpg',
+			'boxed' => THIM_URI . 'images/layout/content-boxed.jpg',
+		),
+	)
+);
+
+//------------------------------------------------Page---------------------------------------------//
+
+// Select All Page Layout
+thim_customizer()->add_field(
+	array(
+		'id'       => 'thim_page_layout',
+		'type'     => 'radio-image',
+		'label'    => esc_html__( 'Page Layouts', 'eduma' ),
+		'tooltip'  => esc_html__( 'Allows you to choose a layout to display for all pages on your site.', 'eduma' ),
+		'section'  => 'content_layout',
+		'priority' => 66,
+		'choices'  => array(
+			'sidebar-left'  => THIM_URI . 'images/layout/sidebar-left.jpg',
+			'full-content'  => THIM_URI . 'images/layout/body-full.jpg',
+			'sidebar-right' => THIM_URI . 'images/layout/sidebar-right.jpg',
+		),
+	)
+);
+

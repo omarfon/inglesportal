@@ -1,0 +1,119 @@
+<?php
+/**
+ * Section Single
+ *
+ * @package Eduma
+ */
+
+thim_customizer()->add_section(
+	array(
+		'id'       => 'product_single',
+		'panel'    => 'product',
+		'title'    => esc_html__( 'Single', 'eduma' ),
+		'priority' => 12,
+	)
+);
+
+thim_customizer()->add_field(
+	array(
+		'id'       => 'thim_woo_single_layout',
+		'type'     => 'radio-image',
+		'label'    => esc_html__( 'Single Layouts', 'eduma' ),
+		'tooltip'  => esc_html__( 'Allows you to choose a layout to display for all single product.', 'eduma' ),
+		'section'  => 'product_single',
+		'priority' => 12,
+		'default'  => 'sidebar-right',
+		'choices'  => array(
+			'sidebar-left'  => THIM_URI . 'images/layout/sidebar-left.jpg',
+			'full-content'    => THIM_URI . 'images/layout/body-full.jpg',
+			'sidebar-right' => THIM_URI . 'images/layout/sidebar-right.jpg',
+		),
+	)
+);
+
+thim_customizer()->add_field(
+	array(
+		'type'     => 'text',
+		'id'       => 'thim_woo_single_sub_title',
+		'label'    => esc_html__( 'Sub Heading', 'eduma' ),
+		'tooltip'  => esc_html__( 'Allows you can setup sub heading for single.', 'eduma' ),
+		'section'  => 'product_single',
+		'priority' => 20,
+	)
+);
+
+thim_customizer()->add_field(
+	array(
+		'type'      => 'image',
+		'id'        => 'thim_woo_single_top_image',
+		'label'     => esc_html__( 'Top Image', 'eduma' ),
+		'priority'  => 30,
+		'transport' => 'postMessage',
+		'section'  => 'product_single',
+		'default'     => THIM_URI . "images/bg-page.jpg",
+	)
+);
+
+// Page Title Background Color
+thim_customizer()->add_field(
+	array(
+		'id'          => 'thim_woo_single_bg_color',
+		'type'        => 'color',
+		'label'       => esc_html__( 'Background Color', 'eduma' ),
+		'tooltip'     => esc_html__( 'If you do not use background image, then can use background color for page title on heading top. ', 'eduma' ),
+		'section'     => 'product_single',
+		'default'     => 'rgba(0,0,0,0.5)',
+		'priority'    => 35,
+		'alpha'       => true,
+		'transport' => 'postMessage',
+		'js_vars'   => array(
+			array(
+				'choice'   => 'color',
+				'element'  => '.top_site_main>.overlay-top-header',
+				'property' => 'background',
+			)
+		)
+	)
+);
+
+thim_customizer()->add_field(
+	array(
+		'id'          => 'thim_woo_single_title_color',
+		'type'        => 'color',
+		'label'       => esc_html__( 'Title Color', 'eduma' ),
+		'tooltip'     => esc_html__( 'Allows you can select a color make text color for title.', 'eduma' ),
+		'section'     => 'product_single',
+		'default'     => '#ffffff',
+		'priority'    => 40,
+		'alpha'       => true,
+		'transport' => 'postMessage',
+		'js_vars'   => array(
+			array(
+				'choice'   => 'color',
+				'element'  => '.top_site_main h1, .top_site_main h2',
+				'property' => 'color',
+			)
+		)
+	)
+);
+
+thim_customizer()->add_field(
+	array(
+		'id'          => 'thim_woo_single_sub_title_color',
+		'type'        => 'color',
+		'label'       => esc_html__( 'Sub Title Color', 'eduma' ),
+		'tooltip'     => esc_html__( 'Allows you can select a color make sub title color page title.', 'eduma' ),
+		'section'     => 'product_single',
+		'default'     => '#999',
+		'priority'    => 45,
+		'alpha'       => true,
+		'transport' => 'postMessage',
+		'js_vars'   => array(
+			array(
+				'choice'   => 'color',
+				'element'  => '.top_site_main .banner-description',
+				'property' => 'color',
+			)
+		)
+	)
+);

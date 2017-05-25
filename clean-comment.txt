@@ -1,0 +1,4 @@
+clean-comment.txtArray
+(
+)
+0.894818067551
